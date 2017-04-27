@@ -16,3 +16,9 @@ while (i < 6) {
         .appendTo('.sun');
         i++;
 }
+
+$('<div>', { 'class': 'mountain' })
+    .appendTo('.view');
+
+$('<div>', { 'class': 'mountain-top' })
+    .appendTo('.mountain');
