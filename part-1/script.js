@@ -14,7 +14,7 @@ var i = 1;
 while (i < 6) {
     $('<div>', { 'class': 'ray-' + i })
         .appendTo('.sun');
-        i++;
+    i++;
 }
 
 $('<div>', { 'class': 'mountain' })
@@ -22,3 +22,11 @@ $('<div>', { 'class': 'mountain' })
 
 $('<div>', { 'class': 'mountain-top' })
     .appendTo('.mountain');
+
+var j = 0;
+
+do {
+    j++;
+    $('<div>', { 'class': 'mountain-cap-' + j })
+        .appendTo('.mountain-top');
+} while (j < 3);
